@@ -17,6 +17,7 @@ delete person['city'];
 console.dir({ person });
 
 // With getter
+
 const person2 = {
   name: 'Marcus Aurelius',
   get city() {

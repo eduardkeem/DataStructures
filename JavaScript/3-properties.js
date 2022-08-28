@@ -6,7 +6,7 @@ const person = {
   born: 121,
 };
 
-if ('name' in person) {
+if ('name' in person) {                          // Возможно 'name' в квадратрые скобки ['name'], нет разницы
   console.log('Person name is: ' + person.name);
 }
 
@@ -28,6 +28,7 @@ const city = 'Rome';
 {
   const fieldName = 'city';
   const fieldValue = 'Roma';
+
   const person = {
     name: 'Marcus Aurelius',
     [fieldName]: fieldValue,
@@ -38,6 +39,7 @@ const city = 'Rome';
 // Expression in field name
 {
   const prefix = 'city';
+
   const person = {
     name: 'Marcus Aurelius',
     [prefix + 'Born']: 'Roma',
@@ -48,6 +50,7 @@ const city = 'Rome';
 // Function in field name
 {
   const fn = (s) => s + 'Born';
+
   const person = {
     name: 'Marcus Aurelius',
     [fn('city')]: 'Roma',
