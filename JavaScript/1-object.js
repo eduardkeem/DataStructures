@@ -16,4 +16,6 @@ const person3 = {
   born: 121,
 };
 
+
+
 console.dir({ person1, person2, person3 });
